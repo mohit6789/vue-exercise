@@ -86,6 +86,7 @@ export default {
   padding: 10px;
   border: 1px solid gray;
   margin: auto;
+  margin-top: 20px;
   overflow: auto;
 }
 

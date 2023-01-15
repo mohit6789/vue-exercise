@@ -1,8 +1,10 @@
 <template>
   <div>
     <strong>Thanks, {{ personalInfo.name }}</strong>
-    <p>Your country is the {{personalInfo.country}} and your city is {{personalInfo.city}}.
-      Your preferred color is {{personalInfo.color}}</p>
+    <p>
+      Your country is the {{personalInfo.country}} and your city is {{personalInfo.city}}.
+      Your preferred color is <span class="color">{{personalInfo.color}}</span>
+    </p>
   </div>
 </template>
 
@@ -19,3 +21,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.color {
+  text-transform: capitalize;
+}
+</style>
